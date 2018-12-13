@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Pagination from './Pagination';
+import Table from './Table';
 import './App.css';
 
 class App extends Component {
@@ -37,7 +38,9 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div>
+        <Table />
+        <br />
         <Pagination 
           {...this.state}
           nextPage={this.nextPage}

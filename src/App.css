@@ -34,3 +34,13 @@
 .pagination {
   display: flex
 }
+
+.row {
+  display: flex
+}
+
+.column {
+  height: 100px;
+  background-color: brown;
+  flex-basis: 100px
+}
