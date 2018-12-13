@@ -50,11 +50,11 @@ class Table extends PureComponent {
                 </div>
                 <div>
                     <label htmlFor="spacesRows">Spaces between Rows:</label>
-                    <input type="text" name="spacesRows" placeholder="spaces between rows" value={this.state.rowSpaces} onChange={(e) => this.setState({rows: e.target.value})}/>
+                    <input type="text" name="spacesRows" placeholder="spaces between rows" value={this.state.rowSpaces} onChange={(e) => this.setState({rowSpaces: e.target.value})}/>
                 </div>
                 <div>
                     <label htmlFor="spaceColumns">Spaces between Columns::</label>
-                    <input type="text" name="spaceColumns" placeholder="spaces between columns" value={this.state.columnSpaces} onChange={(e) => this.setState({rows: e.target.value})}/>
+                    <input type="text" name="spaceColumns" placeholder="spaces between columns" value={this.state.columnSpaces} onChange={(e) => this.setState({columnSpaces: e.target.value})}/>
                 </div> 
                 <h1>Rows and Columns</h1>
                 {this.displayRows()}
