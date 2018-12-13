@@ -6,12 +6,12 @@ class App extends Component {
   constructor() {
     super()
     this.state ={
-      total: 15,
-      skip: 4,
+      total: 17,
+      skip: 6,
       previous: false,
       next: true,
       current: 1,
-      itemsPerPage: 4
+      itemsPerPage: 6
     }
   }
 
@@ -20,7 +20,7 @@ class App extends Component {
     this.setState({
       current: skip+1,
       skip: skip+itemsPerPage,
-      next: skip>=total ? false: true,
+      next: skip+itemsPerPage>=total ? false: true,
       previous: true
     })
   }
